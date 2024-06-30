@@ -1,7 +1,7 @@
 # 🔢 Simple Counter
 
 ## 기획
-![PlanImage](./img/plan.jpg)
+<img src="./img/plan.jpg" alt="PlanImage" width="500">
 
 
 ## 프로젝트 구조
@@ -100,7 +100,7 @@ export default Main
 ```
 
 ## 결과물
-![WebPageImage](./img/simple-counter.png)
+<img src="./img/simple-counter.png" alt="WebPageImage" width="500">
 
 
 ## 느낀점
