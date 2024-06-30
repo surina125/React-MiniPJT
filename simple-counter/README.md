@@ -1,11 +1,10 @@
 # 🔢 Simple Counter
 
 ## 기획
-
 ![PlanImage](./img/plan.png)
 
-## 프로젝트 구조
 
+## 프로젝트 구조
 ```
 📦src
  ┣ 📂assets
@@ -20,8 +19,8 @@
  ┗ 📜main.jsx
 ```
 
-## 과정
 
+## 과정
 App에서 count를 관리해줄 state객체를 하나 생성한다.
 그리고 props로 Main에게 count를 전달해준다.
 
@@ -70,7 +69,6 @@ export default Main
 onClickButton(num)은 setCount(count+num)을 return 시키므로 onClick={()=>onClickButton(num)}이런식으로 함수 형태로 onClick를 만들어 주어야 한다.
 
 
-
 ### 2. (다른 방법) setCount를 props로 컴포넌트에게 전달
 
 ```javascript
@@ -101,6 +99,7 @@ const Main = ({count, setCount}) => {
 export default Main
 ```
 
+## 결과물
 ![WebPageImage](./img/simple-counter.png)
 
 
