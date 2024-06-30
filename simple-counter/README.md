@@ -2,6 +2,7 @@
 
 ![WebPageImage](./simple-counter.png)
 
+## 프로젝트 구조
 ```
 📦src
  ┣ 📂assets
@@ -16,6 +17,7 @@
  ┗ 📜main.jsx
 ```
 
+## 과정
 App에서 count를 관리해줄 state객체를 하나 생성한다.
 그리고 props로 Main에게 count를 전달해준다.
 
@@ -95,6 +97,7 @@ const Main = ({count, setCount}) => {
 export default Main
 ```
 
+## 느낀점
 state를 갱신시키기 위해
 
 1. 버튼을 클릭했을 때 count를 갱신시켜주는 함수를 미리 만들어서 props로 전달
