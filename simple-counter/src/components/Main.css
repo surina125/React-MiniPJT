@@ -1,0 +1,21 @@
+.Main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Main .count-section {
+  background-color: rgb(236, 236, 236);
+  border-radius: 5px;
+  
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.Main .button-section {
+  background-color: rgb(236, 236, 236);
+  border-radius: 5px;
+  
+  padding: 20px;
+}
