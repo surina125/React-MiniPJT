@@ -1,7 +1,7 @@
 # 🔢 Simple Counter
 
 ## 기획
-![PlanImage](./img/plan.png)
+![PlanImage](./img/plan.jpg)
 
 
 ## 프로젝트 구조
