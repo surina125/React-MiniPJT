@@ -1,0 +1,22 @@
+.TodoList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.TodoList .todo-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.TodoList .searchInput {
+  flex: 1;
+  border: none;
+  border-bottom: solid 2px rgb(240, 240, 240);
+  padding-bottom: 20px;
+}
+
+.TodoList .searchInput:focus {
+  border-bottom: 2px solid rgb(37, 147, 255);
+  outline: none;
+}

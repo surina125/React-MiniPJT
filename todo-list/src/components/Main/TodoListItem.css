@@ -1,0 +1,25 @@
+.TodoListItem {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  
+  border-bottom: solid 1px rgb(240, 240, 240);
+  padding: 20px 0;
+}
+
+.TodoListItem .content {
+  flex: 1;
+}
+
+.TodoListItem .deleteButton {
+  border: none;
+  padding: 5px;
+  
+  font-size: 14px;
+  color: gray;
+}
+
+.TodoListItem .date {
+  font-size: 14px;
+  color: gray;
+}

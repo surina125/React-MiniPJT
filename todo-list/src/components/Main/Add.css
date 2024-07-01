@@ -1,0 +1,27 @@
+.Add {
+  display: flex;
+  gap: 10px;
+}
+
+.Add input {
+  border: solid 2px rgb(240, 240, 240);
+  border-radius: 5px;;
+  padding: 15px;
+
+  flex: 1;
+}
+
+.Add input:focus {
+  border: solid 2px rgb(37, 147, 255);
+  outline: none; 
+}
+
+.Add button {
+  background-color: rgb(37, 147, 255);
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+
+  color: white;
+  cursor: pointer;
+}
