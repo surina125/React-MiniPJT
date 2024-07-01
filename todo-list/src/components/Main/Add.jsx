@@ -1,7 +1,9 @@
 import './Add.css'
-import { useState, useRef } from 'react'
+import { useState, useRef, useContext } from 'react'
+import { TodosDispatchContext } from '../../App'
 
-const Add = ({onCreate}) => {
+const Add = () => {
+  const {onCreate} = useContext(TodosDispatchContext)
   const [content, setContent] = useState("")
   const contentRef = useRef("")
 
@@ -9,10 +11,7 @@ const Add = ({onCreate}) => {
     setContent(e.target.value)
   }
 
-  const onKeyDown = 
-  
-  
-  (e) => {
+  const onKeyDown = (e) => {
     if (e.keyCode === 13) {
       onClickButton()
     }

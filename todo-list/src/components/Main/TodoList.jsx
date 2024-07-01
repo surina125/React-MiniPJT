@@ -1,8 +1,10 @@
 import './TodoList.css'
 import TodoListItem from './TodoListItem'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { TodosStateContext } from '../../App'
 
-const TodoList = ({todos, onDelete, onUpdate}) => {
+const TodoList = () => {
+  const todos = useContext(TodosStateContext)
   const [search, setSearch] = useState("")
 
   const getFilteredTodos  = () => {
@@ -20,7 +22,7 @@ const TodoList = ({todos, onDelete, onUpdate}) => {
       <h3>Todo List🌱</h3>
       <section className='todo-section'>
         <input className='searchInput' value={search} onChange={onChangeSearch} placeholder='검색어를 입력하세요' />
-        {filteredTodos.map((todo)=><TodoListItem key={todo.id} {...todo} onDelete={onDelete} onUpdate={onUpdate} />)}
+        {filteredTodos.map((todo)=><TodoListItem key={todo.id} {...todo} />)}
       </section>
     </div>
   )

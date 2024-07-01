@@ -1,7 +1,7 @@
 import './App.css'
 import Header from './components/Header'
 import Main from './components/Main'
-import { useReducer, useRef } from 'react'
+import { useReducer, useRef, createContext } from 'react'
 
 const mockData = []
 
@@ -15,6 +15,9 @@ function reducer(todos, action) {
       return todos.filter((todo) => todo.id !== action.targetId)
     }
 }
+
+export const TodosStateContext = createContext()
+export const TodosDispatchContext = createContext()
 
 function App() {
   const [todos, dispatch] = useReducer(reducer, mockData)
@@ -49,7 +52,11 @@ function App() {
   return (
     <div className='App'>
       <Header />
-      <Main onCreate={onCreate} onDelete={onDelete} onUpdate={onUpdate} todos={todos} />
+      <TodosStateContext.Provider value={todos}>
+        <TodosDispatchContext.Provider value={{ onCreate, onUpdate, onDelete }}>
+          <Main />
+        </TodosDispatchContext.Provider>
+      </TodosStateContext.Provider>
     </div>
   )
 }
