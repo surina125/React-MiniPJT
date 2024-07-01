@@ -141,7 +141,7 @@ function App() {
 export default App
 ```
 
-## useContext로 전역에서 데이터와 상태관리 함수 관리하기
+### useContext로 전역에서 데이터와 상태관리함수를 가져다 쓸 수 있게 만들기
 ```javascript
 // App.jsx
 import './App.css'
