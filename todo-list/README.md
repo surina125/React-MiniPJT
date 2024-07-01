@@ -33,6 +33,7 @@ Header에서는 오늘의 날짜가 렌더링 된다. 그리고 Main에는 할�
 ### 1. useReduce로 상태관리
 
 ```javascript
+// App.jsx
 import './App.css'
 import Header from './components/Header'
 import Main from './components/Main'
